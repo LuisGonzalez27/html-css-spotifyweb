@@ -191,3 +191,11 @@ button{
         flex-wrap: wrap;
     }
  }
+
+ @media screen and (max-width: 576px){
+
+    /* UTILITIES LAYOUT */
+    .card{
+        width: calc(100% / 2);
+    }
+ }
