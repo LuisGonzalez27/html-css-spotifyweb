@@ -35,29 +35,6 @@ li a {
     border-radius: 50%;
 }
 
-.container-card{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    line-height: 2;
-}
-
-.card{
-    width: calc(100% / 6);
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-
-.card img{
-    padding-bottom: 10px;
-}
-
-.card p{
-    color: var(--card-text);
-    font-weight: bold;
-}
-
 /* SITE SECTIONS */
 /* Start MAIN */
 main{
@@ -73,6 +50,14 @@ nav{
     background-color: var(--black);
 }
 
+.container p{
+    padding-left: 10px;
+    color: var(--card-text);
+    font-weight: bold;
+    line-height: 3;
+}
+
+/* MAIN-CONTENT SECTION */
 .main-content{
     width: calc(100% - 230px);
     height: 100%;
@@ -88,6 +73,30 @@ nav{
     top: 0;
     z-index: 1000;
 }
+
+.flex-horiz{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right-button{
+    padding-right: 260px;
+}
+
+button{
+    border: 1px solid var(--white);
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--white);
+    border-radius: 20px;
+}
+
 /* INNER-CONTENT SECTION */
 .inner-content{
     overflow-y: auto;
@@ -127,23 +136,33 @@ nav{
 }
 
 /* RECENTLY SECTION */
+/* Card Style */
+.container-card{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    line-height: 2;
+}
 
+.card{
+    width: calc(100% / 6);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.card img{
+    padding-bottom: 10px;
+}
+
+.card p{
+    color: var(--card-text);
+    font-weight: bold;
+}
 
 /* Creato SECTION */
-.creato-container p{
-    padding-left: 10px;
-    color: var(--card-text);
-    font-weight: bold;
-    line-height: 3;
-}
 
 /* ARTISTI SECTION */
-.artisti-container p{
-    padding-left: 10px;
-    color: var(--card-text);
-    font-weight: bold;
-    line-height: 3;
-}
 
 /* EVERYTHING OUTSIDE THE MAIN */
 .playbar{
@@ -153,29 +172,6 @@ nav{
     position: fixed;
     bottom: 0;
     z-index: 2000;
-}
-
-button{
-    border: 1px solid var(--white);
-    background-color: rgba(0,0,0,0.5);
-    padding: 10px 50px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 10px;
-    font-weight: bold;
-    cursor: pointer;
-    color: var(--white);
-    border-radius: 20px;
-}
-
-.flex-horiz{
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-}
-
-.right-button{
-    padding-right: 260px;
 }
 
 /* RESPONSIVE */
