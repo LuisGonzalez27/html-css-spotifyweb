@@ -16,20 +16,25 @@ html{
     --content: #141922;
 }
 
+/* UTILITIES LAYOUT */
 .wrapper{
     width: 100%;
     height: 100vh;
 }
 
-.row {
+.container-card{
     display: flex;
+    flex-wrap: wrap;
 }
 
-.col {
-    padding-left: 1rem;
-    padding-right: 1rem;
+.card{
+    width: calc(100% / 6);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
 
+/* SITE SECTIONS */
 /* Start MAIN */
 main{
     width: 100%;
@@ -59,31 +64,27 @@ nav{
     top: 0;
     z-index: 1000;
 }
-
+/* INNER-CONTENT SECTION */
 .inner-content{
     overflow-y: auto;
     height: 100%;
     padding-top: 95px;
 }
 
-/* RECENTLY */
-.recently{
-    padding: 10px 30px 10px 0px;
-}
-.recently .container-card {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.recently h2{
+.inner-content h2{
     padding-left: 10px;
 }
 
-.recently .card {
-    width: calc(100% / 6);
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+.recently, .creato{
+    padding: 10px 30px 10px 0px;
+}
+
+/* RECENTLY SECTION */
+
+
+/* Creato SECTION */
+.creato-container p{
+    padding-left: 10px;
 }
 
 /* EVERYTHING OUTSIDE THE MAIN */
