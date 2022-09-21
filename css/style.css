@@ -21,6 +21,15 @@ html{
     height: 100vh;
 }
 
+.row {
+    display: flex;
+}
+
+.col {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 /* Start MAIN */
 main{
     width: 100%;
@@ -55,6 +64,11 @@ nav{
     overflow-y: auto;
     height: 100%;
     padding-top: 95px;
+}
+
+/* RECENTLY */
+.recently .col img {
+    width: 50%;
 }
 
 /* EVERYTHING OUTSIDE THE MAIN */
