@@ -25,6 +25,19 @@ li a {
     text-decoration: none;
 }
 
+.fa-solid{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.fa-square-plus{
+    font-size: 40px;
+}
+
+.fa-solid.fa-circle-user{
+    padding-bottom: 10px;
+}
+
 /* UTILITIES LAYOUT */
 .wrapper{
     width: 100%;
@@ -50,11 +63,40 @@ nav{
     background-color: var(--black);
 }
 
-.container p{
+#nav-vertical{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     padding-left: 10px;
     color: var(--card-text);
-    font-weight: bold;
-    line-height: 3;
+}
+
+#nav-vertical img{
+    width: 70%;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+#nav-vertical ul{
+    padding-top: 20px;
+}
+
+#nav-vertical li{
+    padding-top: 15px;
+}
+
+#nav-vertical li a{
+    color: var(--card-text);
+}
+
+#nav-vertical h5{
+    color: var(--white); 
+    padding-top: 6px;
+}
+
+#plus{
+    display: flex;
+    align-items: center;
 }
 
 /* MAIN-CONTENT SECTION */
@@ -104,6 +146,12 @@ button{
     padding-top: 95px;
 }
 
+#inner-nav{
+    width: 100%;
+    height: auto;
+    background-color: var(--content);
+}
+
 .inner-content h2{
     padding-left: 10px;
 }
@@ -116,12 +164,6 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#inner-nav{
-    width: 100%;
-    height: auto;
-    background-color: var(--content);
 }
 
 .flexnav li{
@@ -137,6 +179,13 @@ button{
 
 /* RECENTLY SECTION */
 /* Card Style */
+.container p{
+    padding-left: 10px;
+    color: var(--card-text);
+    font-weight: bold;
+    line-height: 3;
+}
+
 .container-card{
     display: flex;
     flex-wrap: wrap;

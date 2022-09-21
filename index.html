@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Styles -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,13 +17,41 @@
 <body>
     <div class="wrapper">
         <main>
-            <nav>AAAA</nav>
+            <nav id="nav-vertical">
+                <div>
+                    <!-- logo -->
+                    <img src="./img/logo.svg" alt="logo">
+                    <ul>
+                        <li><i class="fa-solid fa-house"></i><a href="#"> Home</a></li>
+                        <li><i class="fa-solid fa-magnifying-glass"></i><a href="#"> Cerca</a></li>
+                        <li><i class="fa-solid fa-lines-leaning"></i><a href="#"> La tua libreria</a></li>
+                    </ul>
+                    <ul >
+                        <h5>PLAYLIST</h5>
+                        <li id="plus"><i class="fa-solid fa-square-plus"></i><a href="#">&nbsp;Crea Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <ul>
+                        <li><i class="fa-regular fa-circle-down"></i><a href="#"> Installa app</a></li>
+                        <li><a href="#"><hr></a></li>
+                        <li><i class="fa-solid fa-circle-user"></i><a href="#"> John Doe</a></li>
+                    </ul>
+                </div>
+            </nav>
             <section class="main-content">
                 <nav class="nav-horizontal flex-horiz">
                     <div class="right-button">
                         <button >EFFETTUA UPGRADE</button>
                     </div>
                 </nav>
+                <!-- INNER-CONTENT SECTION -->
                 <section class="inner-content">
                     <nav class="flexnav" id="inner-nav">
                             <ul class="flexnav">
@@ -34,7 +63,7 @@
                                 <li><a href="#">SCOPRI</a></li>
                              </ul>
                     </nav>
-                    
+                    <!-- RECENTLY SECTION -->
                     <section class="recently">
                         <div class="recently container">
                             <h2>Recently Played</h2>
