@@ -67,6 +67,9 @@ nav{
 }
 
 /* RECENTLY */
+.recently{
+    padding: 10px 30px 10px 0px;
+}
 .recently .container-card {
     display: flex;
     flex-wrap: wrap;
