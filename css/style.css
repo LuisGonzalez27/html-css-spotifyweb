@@ -149,3 +149,26 @@ nav{
     bottom: 0;
     z-index: 2000;
 }
+
+button{
+    border: 1px solid var(--white);
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--white);
+    border-radius: 20px;
+}
+
+.flex-horiz{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+}
+
+.right-button{
+    padding-right: 260px;
+}
