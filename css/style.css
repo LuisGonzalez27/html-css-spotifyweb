@@ -34,6 +34,10 @@ html{
     padding: 10px;
 }
 
+.circular-square{
+    border-radius: 50%;
+}
+
 /* SITE SECTIONS */
 /* Start MAIN */
 main{
@@ -75,7 +79,7 @@ nav{
     padding-left: 10px;
 }
 
-.recently, .creato{
+.recently, .creato, .artisti{
     padding: 10px 30px 10px 0px;
 }
 
@@ -84,6 +88,11 @@ nav{
 
 /* Creato SECTION */
 .creato-container p{
+    padding-left: 10px;
+}
+
+/* ARTISTI SECTION */
+.artisti-container p{
     padding-left: 10px;
 }
 
