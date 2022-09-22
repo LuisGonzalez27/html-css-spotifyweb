@@ -65,9 +65,9 @@ nav{
 
 #nav-vertical{
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     padding-left: 10px;
+    padding-right: 20px;
     color: var(--card-text);
 }
 
@@ -75,10 +75,6 @@ nav{
     width: 70%;
     padding-top: 20px;
     cursor: pointer;
-}
-
-#nav-vertical ul{
-    padding-top: 20px;
 }
 
 #nav-vertical li{
@@ -91,13 +87,25 @@ nav{
 
 #nav-vertical h5{
     color: var(--white); 
-    padding-top: 6px;
+    padding-top: 15px;
 }
 
 #plus{
     display: flex;
     align-items: center;
 }
+
+.user-list{
+    padding-top: 10px;
+}
+
+ .play-list{
+    overflow-y: auto;
+ }
+
+ .margin-trick{
+    margin-top: auto;
+ }
 
 /* MAIN-CONTENT SECTION */
 .main-content{
