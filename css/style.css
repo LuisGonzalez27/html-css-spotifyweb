@@ -104,11 +104,11 @@ nav{
     width: calc(100% - 230px);
     height: 100%;
     background-color: var(--content);
-    overflow: auto;
+    overflow-y: auto;
 }
 
 .nav-horizontal{
-    width: 100%;
+    width: calc(100% - 230px);
     height: 95px;
     background-color: rgba(0,0,0,0.5);
     position: fixed;
@@ -122,10 +122,6 @@ nav{
     justify-content: flex-end;
 }
 
-.right-button{
-    padding-right: 260px;
-}
-
 button{
     border: 1px solid var(--white);
     background-color: rgba(0,0,0,0.5);
@@ -137,6 +133,7 @@ button{
     cursor: pointer;
     color: var(--white);
     border-radius: 20px;
+    margin-right: 35px;
 }
 
 button:hover{
@@ -227,7 +224,6 @@ button:hover{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* color: red; */
     font-size: 5vw;
     display: none;
 }
@@ -255,7 +251,7 @@ button:hover{
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1200px){
 
     /* UTILITIES LAYOUT */
     .card{
@@ -268,10 +264,26 @@ button:hover{
     }
  }
 
- @media screen and (max-width: 576px){
+ @media screen and (max-width: 992px){
+
+    /* UTILITIES LAYOUT */
+    .card{
+        width: calc(100% / 3);
+    }
+ }
+
+ @media screen and (max-width: 768px){
 
     /* UTILITIES LAYOUT */
     .card{
         width: calc(100% / 2);
+    }
+ }
+
+ @media screen and (max-width: 576px){
+
+    /* UTILITIES LAYOUT */
+    .card{
+        width: 100%;
     }
  }
