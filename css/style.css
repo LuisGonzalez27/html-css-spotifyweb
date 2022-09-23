@@ -286,6 +286,10 @@ button:hover{
     display: flex;
     align-items: center;
 }
+/* play-left*/
+.play-left{
+    flex-basis: 25%;
+}
 
 .play-left img{
     width: 80px;
@@ -302,6 +306,10 @@ button:hover{
     color: var(--card-text);
     padding-left: 2rem;
     font-size: 1.5rem;
+}
+
+.play-icons :first-child {
+    padding-right: 20px;
 }
 
 .play-left p:hover{
@@ -367,6 +375,43 @@ button:hover{
     background-color: var(--green);
 }
 
+/* play-right */
+.play-right{
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-basis: 25%;
+    gap: 25px;
+}
+.other-icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.other-icons i:hover{
+    transform: scale(1.1);
+}
+
+.volume{
+    width: 8vw;
+    height: 4px;
+    background-color: var(--bar-gray);
+    border-radius: 4px;
+    margin: 0 25px;
+    cursor: pointer;
+}
+
+.volume-2{
+    width: 25%;
+    height: 4px;
+    background-color: var(--bar-grey-light);
+    border-radius: 4px;
+}
+
+.volume:hover .volume-2{
+    background-color: var(--green);
+}
+
 /* RESPONSIVE */
 @media screen and (max-width: 1200px){
 
@@ -424,5 +469,13 @@ button:hover{
 
     .nav-horizontal {
         width: calc(100% - 40px);
+    }
+
+    .play-left , .play-right{
+        display: none;
+    }
+
+    .play-center {
+        flex-basis: 100%;
     }
  }
