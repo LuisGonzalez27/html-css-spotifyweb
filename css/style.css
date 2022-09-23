@@ -247,6 +247,11 @@ button:hover{
     font-weight: bold;
 }
 
+.card h4{
+    line-height: 1;
+    padding-top: 6px;
+}
+
 .cover{
     position: relative;
 }
