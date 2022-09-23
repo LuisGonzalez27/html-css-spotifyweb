@@ -71,7 +71,7 @@ nav{
     color: var(--card-text);
 }
 
-#nav-vertical img{
+#logo{
     width: 70%;
     padding-top: 20px;
     cursor: pointer;
@@ -90,6 +90,10 @@ nav{
     padding-top: 15px;
 }
 
+#nav-vertical i:hover, #nav-vertical a:hover{
+    color: var(--white);
+}
+
 #plus{
     display: flex;
     align-items: center;
@@ -105,6 +109,13 @@ nav{
 
  .margin-trick{
     margin-top: auto;
+ }
+
+ #logo-small{
+    display: none;
+    width: 25px;
+    padding-top: 20px;
+    cursor: pointer;
  }
 
 /* MAIN-CONTENT SECTION */
@@ -293,5 +304,27 @@ button:hover{
     /* UTILITIES LAYOUT */
     .card{
         width: 100%;
+    }
+
+    /* NAV-VERTICAL */
+    #nav-vertical a , #logo ,#nav-vertical h5 , #plus{
+        display: none;
+    }
+
+    #logo-small{
+        display: block;
+    }
+
+    
+    #nav-vertical{
+        width: 40px;
+    }
+
+    .main-content {
+        width: calc(100% - 40px);
+    }
+
+    .nav-horizontal {
+        width: calc(100% - 40px);
     }
  }
