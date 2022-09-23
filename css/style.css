@@ -179,6 +179,15 @@ button:hover{
     color: var(--white);
 }
 
+#evidenza:after {
+    content: '';
+    display: block;
+    background: var(--green);
+    height: 2px;
+    width: 40px;
+    margin: 4px auto;
+}
+
 .inner-content h2{
     padding-left: 10px;
 }
@@ -191,6 +200,7 @@ button:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .flexnav li{
