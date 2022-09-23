@@ -269,6 +269,38 @@ button:hover{
     z-index: 2000;
 }
 
+/* STYLE PLAYBAR */
+.inner-playbar{
+    height: 100%;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5000;
+}
+
+.play-left, .play-center, .play-right {
+    display: flex;
+    align-items: center;
+}
+
+.play-left img{
+    width: 80px;
+    padding-right: 20px;
+}
+
+.play-left p{
+    color: var(--card-text);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.play-icons{
+    color: var(--card-text);
+    padding-left: 2rem;
+    font-size: 1.5rem;
+}
+
 /* RESPONSIVE */
 @media screen and (max-width: 1200px){
 
